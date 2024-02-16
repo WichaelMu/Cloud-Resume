@@ -11,7 +11,7 @@ function Tick()
                 requestAnimationFrame(Tick);
         }
 
-        document.getElementById("Metric").innerHTML = `You are visitor number: ${Current}`;
+        document.getElementById("Metric").innerHTML = `You are Visitor Number: ${Current}`;
 }
 
 fetch("https://7qui4v5ceqdqbmhxy265im3frq0ulaei.lambda-url.ap-southeast-2.on.aws/")
