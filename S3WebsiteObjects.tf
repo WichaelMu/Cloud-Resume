@@ -16,8 +16,8 @@
 #   content_type = "text/html"
 # }
 
-resource "aws_s3_object" "HarryJoh-ezcv-website-recursive" {
-  bucket   = aws_s3_bucket.cloud_resume_site_bucket.id
+resource "aws_s3_object" "WichaelMu-EZCV-Website" {
+  bucket   = aws_s3_bucket.b.id
   for_each = fileset("${var.WebsitePath}", "**/*.*")
 
   key    = each.value
