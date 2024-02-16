@@ -8,3 +8,7 @@ variable "R53ZoneID" {
   default = "Z01267694NTYQD3E67XI"
 }
 ################################################################################
+
+variable "WebsitePath" {
+  default = "Site/"
+}
