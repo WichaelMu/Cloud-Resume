@@ -2,7 +2,7 @@
 
 resource "aws_cloudfront_distribution" "m" {
   origin {
-    domain_name = "http://terror-mw.s3-website-ap-southeast-2.amazonaws.com"
+    domain_name = aws_s3_bucket.b.bucket_regional_domain_name
     origin_id   = "MW-CloudResume-CloudFront-Origin"
     s3_origin_config {
       origin_access_identity = aws_cloudfront_origin_access_identity.m.cloudfront_access_identity_path
